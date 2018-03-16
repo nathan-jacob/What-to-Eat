@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" class="gone" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" class="gone" href="C:\Users\NathanJ\Desktop\20% time\index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/vendor/require.js" data-main="js/modules/app"></script>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+</style>
+<body class="w3-light-grey">
+<div class="normal">
+
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Eat Well</b></a>
+  <a id = "start" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-car"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="https://www.w3schools.com/w3images/london2.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-car w3-margin-right"></i>Restaurants</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find good Restaurants</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+
+          <label>Search</label>
+          <div class="box">
+        <div class="container-4">
+
+
+
+          <input type="search" id="search" placeholder="Search..." />
+          <button onclick="search();" class="icon"><i class="fa fa-search"></i></button>
+
+
+        </div>
+      </div>
+
+      </div>
+      <p><button onclick="search();" class="w3-button border">Search and reserve dates</button></p>
+    </div>
+
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Good offers -->
+
+  <div class="w3-container w3-margin-top ">
+    <h3>Good Offers Right Now</h3>
+    <h6>Up to <strong>50%</strong> discount.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large card">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+          <a href="http://www.apisrestaurant.com">
+        <img src="https://cdn.vox-cdn.com/thumbor/IrzpabV-hiT4v7skcxIA0mWT0R8=/0x0:899x600/620x465/filters:focal(379x229:521x371):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264127/Photo_Feb_04__10_07_53.0.0.0.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Apis Restaurant & Apiary</span>
+        </a>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container container">
+              <a  href="http://ramen-tatsuya.com/">
+            <img src="https://cdn.vox-cdn.com/thumbor/_2_XG_KiXPqr2mj0p4d4OgFSYNs=/0x0:1000x667/620x465/filters:focal(420x254:580x414):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264129/upload.0.0.0.0.0.jpg" alt="New York" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Ramen Tatsu-ya</span>
+        </a>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+              <a href="https://www.dinhochinesebbq.com/">
+            <img src="https://cdn.vox-cdn.com/thumbor/uHa-gdCynS8G-XSOnqpueiHFGqw=/0x0:1801x1080/620x465/filters:focal(757x396:1045x684):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264131/664824_215835291882530_1087386440_o.0.0.jpg" alt="San Francisco" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Din Ho Chinese BBQ</span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+              <a href="https://www.bidermansdeli.com/">
+            <img src="https://cdn.vox-cdn.com/thumbor/_fNJKjAy6bqE1VrmY7S6TaABOw8=/0x0:2048x1334/620x465/filters:focal(665x649:991x975):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264133/21994136_545729519097727_3572724296530557501_o.0.jpg" alt="Pisa" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Biderman's Deli</span>
+        </a>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+              <a href="https://goo.gl/maps/iJ7JLZdjVbL2">
+            <img src="https://cdn.vox-cdn.com/thumbor/OIh4yNpZH-3Gtx9apY7yTRzTZ8A=/0x0:1023x682/620x465/filters:focal(0x0:1023x682):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58343799/RackMultipart20180116-22540-1tjosxj.0.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Moody Theater</span>
+        </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Explore Nature</h3>
+    <p>Dine with us and see nature at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom card">
+      <a href="http://epicerieaustin.com/"><img src="https://cdn.vox-cdn.com/thumbor/7tushp1ZkjFemMhu7OcMt5A7BqU=/0x0:1200x693/620x465/filters:focal(504x251:696x443):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264137/12185431_995644710498890_6288737245806062977_o.0.0.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3> Epicerie</h3>
+        <p class="w3-opacity">Reservations from $50</p>
+        <p>Sarah McIntosh's charming and well-executed cafe and grocery showcases what neighborhood dining should look like.</p>
+        <button class="w3-button w3-margin-bottom w3-hover-red">Buy Now</button>
+      </div>
+  </a>
+    </div>
+    <div class="w3-half w3-margin-bottom card">
+        <a href="http://contigotexas.com/">
+      <img src="https://cdn.vox-cdn.com/thumbor/mtCPsbhYen0LO-uq3TtSlR2HMCg=/0x0:1024x680/620x465/filters:focal(431x259:593x421):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58264143/570_1austin_foodphotography_contigo4-2-1024x680.0.0.0.0.jpg" alt="Austria" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Contigo</h3>
+        <p class="w3-opacity">Reservations from $39</p>
+        <p>Contigo's minimalist beer garden is the perfect setting for its ranch-inspired menu, which heavily features housemade charcuterie and other meaty delights.</p>
+        <button class="w3-button w3-margin-bottom w3-hover-red">Buy Now</button>
+      </div>
+  </a>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="w3-container showen card1">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" id="send" placeholder="Your Email address">
+      <button type="button" onclick="send();" class="w3-button w3-light-grey w3-margin-top w3-hover-red">Subscribe</button>
+    </div>
+  </div>
+  <div class="w3-container hidden card">
+    <div class="w3-panel w3-padding-16 w3-red w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Thank You!</h2>
+      <p>We understand messy inboxes, that's why we never send spam. ever.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container showing card">
+    <h2>Contact</h2>
+    <p>Concerns/Questions!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Kealing Middle School<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: nathan.jacob9m@gmail.com<br>
+
+      <p><input class="w3-input w3-padding-16 w3-border name" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border message" type="text" placeholder="Message" required name="Message"></p>
+    <p><input class="w3-input w3-padding-16 w3-border message" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><button class="w3-button w3-black w3-padding-large w3-hover-red" type="submit" value="Submit" onclick="respond();">SEND MESSAGE</button></p>
+
+  </div>
+  <div class="w3-container hiding">
+    <div class="w3-panel w3-padding-16 w3-red w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Thank You!</h2>
+      <p>If you have any legal or abuse related concerns please consult the ICANN website.</p>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+</div>
+<!-- Footer -->
+<div class="all">
+
+
+<div lang="en" class="searchy">
+
+  <div class="strip-background"></div>
+<div class="search__container">
+    <div class="container-4">
+
+
+
+      <input type="search" class="death" id="search" placeholder="Search..." />
+      <button onclick="search();" class="icon"><i class="fa fa-search"></i></button>
+
+
+
+    </div>
+<button onclick="back();" class="button"><i class="fa fa-arrow-left"></i></button>
+</div>
+</div>
+<div class="search__container">
+    <div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<div id="myList">
+
+</div>
+<!--  -->
+  <ul class="card">
+    <li class="search-item">
+      <div class="search-item__image 100" style="background-image: url(http://placehold.it/100x100);"></div>
+      <div class="search-item__content">
+        <p class="p text--medium 0">
+           Not Found
+
+        </p>
+        <p class="p text--small text--muted 10">address not found</p>
+        <p class="p text--small text--muted 20">details not found</p>
+      </div>
+      <div class="search-item__options">
+
+      </div>
+    </li>
+
+    <li class="search-item">
+      <div class="search-item__image 31" style="background-image: url(http://placehold.it/100x100);"></div>
+      <div class="search-item__content">
+        <p class="p text--medium 1">
+           Not Found
+          </p>
+        <p class="p text--small text--muted 11">address not found</p>
+        <p class="p text--small text--muted 21">details not found</p>
+      </div>
+      <div class="search-item__options">
+
+      </div>
+    </li>
+          <li class="search-item">
+      <div class="search-item__image 32" style="background-image: url(http://placehold.it/100x100);"></div>
+      <div class="search-item__content">
+        <p class="p text--medium 2">
+           Not Found
+
+        </p>
+        <p class="p text--small text--muted 12">address not found</p>
+        <p class="p text--small text--muted 22">details not found</p>
+      </div>
+      <div class="search-item__options">
+
+      </div>
+    </li>
+    <li class="search-item">
+<div class="search-item__image 33" style="background-image: url(http://placehold.it/100x100);"></div>
+<div class="search-item__content">
+  <p class="p text--medium 3">
+     Not Found
+
+  </p>
+  <p class="p text--small text--muted 13">address not found</p>
+  <p class="p text--small text--muted 23">details not found</p>
+</div>
+<div class="search-item__options">
+
+</div>
+</li>
+<li class="search-item">
+<div class="search-item__image 34" style="background-image: url(http://placehold.it/100x100);"></div>
+<div class="search-item__content">
+<p class="p text--medium 4">
+ Not Found
+
+</p>
+<p class="p text--small text--muted 14">address not found</p>
+<p class="p text--small text--muted 24">details not found</p>
+</div>
+<div class="search-item__options">
+
+</div>
+</li>
+<li class="search-item">
+<div class="search-item__image 35" style="background-image: url(http://placehold.it/100x100);"></div>
+<div class="search-item__content">
+<p class="p text--medium 5">
+ Not Found
+
+</p>
+<p class="p text--small text--muted 15">address not found</p>
+<p class="p text--small text--muted 25">details not found</p>
+</div>
+<div class="search-item__options">
+
+</div>
+</li>
+<li class="search-item">
+<div class="search-item__image 36" style="background-image: url(http://placehold.it/100x100);"></div>
+<div class="search-item__content">
+<p class="p text--medium 6">
+ Not Found
+
+</p>
+<p class="p text--small text--muted 16">address not found</p>
+<p class="p text--small text--muted 26">details not found</p>
+</div>
+<div class="search-item__options">
+
+</div>
+</li>
+<li class="search-item">
+<div class="search-item__image 37" style="background-image: url(http://placehold.it/100x100);"></div>
+<div class="search-item__content">
+<p class="p text--medium 7">
+ Not Found
+
+</p>
+<p class="p text--small text--muted 17">address not found</p>
+<p class="p text--small text--muted 27">details not found</p>
+</div>
+<div class="search-item__options">
+
+</div>
+</li>
+                <li class="search-item">
+      <div class="search-item__image 38" style="background-image: url(http://placehold.it/100x100);"></div>
+      <div class="search-item__content">
+        <p class="p text--medium 8">
+           Not Found
+
+        </p>
+        <p class="p text--small text--muted 18">address not found</p>
+        <p class="p text--small text--muted 28">details not found</p>
+      </div>
+      <div class="search-item__options">
+
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+<div class="text--center">
+  <p class="p text--small text--muted">No more results.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<script src="index.js">
+
+</script>
+<script type="text/javascript">require(['app'], function(app){ app.main() })</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script>
+console.log("click on the car to play a game");
+
+$( "body" ).keydown(function( event ) {
+if ( event.which == 71 ) {
+$("#start").click();
+}
+});
+
+
+
+
+</script>
+</body>
+</html>
